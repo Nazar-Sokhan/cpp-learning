@@ -1,17 +1,35 @@
-# 🚀 C++ & GameDev Learning Roadmap (100 Задач)
+# 🚀 C++ & Linux/GameDev Learning Roadmap (100 Задач)
 
-Репозиторій для вивчення сучасного C++ з нуля до Junior GameDev / C++ Developer.  
+Репозиторій для вивчення сучасного C++ з нуля до Junior C++ / Embedded / GameDev Developer.  
 Автор: [Nazar-Sokhan](https://github.com/Nazar-Sokhan)  
-Графічний стек: **Raylib 5.5 + OpenGL + ISO C++20 (Visual Studio 2022)**
+Стек технологій: **ISO C++20 | Linux (Ubuntu / WSL2) | CMake 4.2 | GCC 15 | Raylib 5.5 | Visual Studio 2022**
 
 ---
 
-## 📌 Загальний прогрес: 79 / 100
+## 📌 Загальний прогрес: 80 / 100
 - **Базовий C++ (Консоль):** 60 / 60 `[ЗАВЕРШЕНО 🏆]`
-- **ООП, Raylib 2D та Портфоліо:** 19 / 40 `[У ПРОЦЕСІ 🎯]`
+- **ООП, Модульна архітектура, Linux CMake та Raylib 2D:** 20 / 40 `[У ПРОЦЕСІ 🎯]`
 
 ```
-[█████████████████████████████████████████░░░░░░░░░] 79%
+[██████████████████████████████████████████░░░░░░░░] 80%
+```
+
+---
+
+## 🌟 Вибраний модульний проєкт: Tic-Tac-Toe PRO (C++20 & CMake)
+
+Проєкт демонструє чисту багатофайлову архітектуру з розділенням інтерфейсу та реалізації:
+- **`projects/tictactoe-pro/include/Board.h`** — опис класу та методів (інтерфейс).
+- **`projects/tictactoe-pro/src/Board.cpp`** — логіка роботи поля, перевірки перемоги та ходів (реалізація).
+- **`projects/tictactoe-pro/src/main.cpp`** — головний ігровий цикл.
+- **`projects/tictactoe-pro/CMakeLists.txt`** — автоматизована кросплатформна збірка через CMake під Linux/Windows.
+
+### ⚙️ Збірка та запуск під Linux / WSL:
+```bash
+cd projects/tictactoe-pro
+cmake -B build
+cmake --build build
+./build/tictactoe_pro
 ```
 
 ---
@@ -180,7 +198,7 @@
 ---
 
 ### Блок 17. Фінальна поліровка: Tic-Tac-Toe PRO (`17-tictactoe-pro`)
-- [ ] 96. Модульна структура: розбиття коду на окремі файли `.h` та `.cpp`
+- [x] 96. Модульна структура: розбиття коду на окремі файли `.h` та `.cpp` (CMake)
 - [ ] 97. Головне меню гри з анімованими кнопками вибору режиму
 - [ ] 98. Візуальні ефекти: анімація малювання знаків та світіння переможної лінії
 - [ ] 99. Збереження історії перемог та статистики у файл на диску
@@ -192,6 +210,7 @@
 - [x] **01. Консольний RPG-інвентар** (C++, цикл, масиви)
 - [x] **02. Консольний Банк** (C++, меню, валідація, захист транзакцій)
 - [x] **03. Консольні ігри 56-60** (Угадай число, КНБ, To-Do List, Tic-Tac-Toe)
-- [ ] **04. Tic-Tac-Toe PRO (Raylib 2D)** (OpenGL, Minimax AI, Procedural Audio, Fullscreen)
-- [ ] **05. Retro Pong / Arkanoid (Raylib 2D)** (Фізика, колізії, DeltaTime, ШІ-ракетка)
-- [ ] **06. Classic Snake (Raylib 2D)** (ООП, STL vector, сітка, генерація їжі)
+- [x] **04. Tic-Tac-Toe PRO (Modular C++20 & CMake)** (Модульна структура, CMakeLists, білд під Linux/WSL)
+- [ ] **05. Tic-Tac-Toe 2D (Raylib)** (OpenGL, Minimax AI, Procedural Audio, Fullscreen)
+- [ ] **06. Retro Pong / Arkanoid (Raylib 2D)** (Фізика, колізії, DeltaTime, ШІ-ракетка)
+- [ ] **07. Classic Snake (Raylib 2D)** (ООП, STL vector, сітка, генерація їжі)
